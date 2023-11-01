@@ -1,0 +1,19 @@
+15:47:08 **** Build of configuration Debug for project TEST ****
+make -j12 all 
+arm-none-eabi-gcc -o "TEST.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\DaiHoc\PIF\TEST\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TEST.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TEST.elf
+ 
+arm-none-eabi-size   TEST.elf 
+arm-none-eabi-objdump -h -S  TEST.elf  > "TEST.list"
+   text	   data	    bss	    dec	    hex	filename
+   4476	     20	   1572	   6068	   17b4	TEST.elf
+arm-none-eabi-objcopy  -O binary  TEST.elf  "TEST.bin"
+Finished building: default.size.stdout
+Finished building: TEST.list
+ 
+Finished building: TEST.bin
+ 
+ 
+
+15:47:12 Build Finished. 0 errors, 0 warnings. (took 4s.65ms)
+
