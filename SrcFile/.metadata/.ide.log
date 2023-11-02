@@ -3041,3 +3041,41 @@
 2023-11-02 09:39:10,733 [INFO] IPUIPlugin:74 - create IPUIPlugin
 2023-11-02 09:39:10,733 [INFO] IPUIPlugin:74 - create IPUIPlugin
 2023-11-02 09:39:10,749 [INFO] OpenFileManager:333 - Restore cursor
+2023-11-02 09:48:47,077 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 769542040 Bytes (1073741824)
+2023-11-02 09:48:47,982 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 793337056 Bytes (1073741824)
+2023-11-02 09:48:48,095 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 794122304 Bytes (1073741824)
+2023-11-02 09:48:48,272 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2023-11-02 09:48:48,272 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2023-11-02 09:48:48,272 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2023-11-02 09:48:48,272 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2023-11-02 09:48:48,272 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8F1
+2023-11-02 09:48:48,273 [INFO] CodeGenerator:663 - code generatio: config db path: D:\DaiHoc\HK5\VXL\stm32cubeide_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2023-11-02 09:48:48,478 [INFO] CodeEngine:239 - oldGeneratedFile, D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\MXTmpFiles\license.tmp_save
+2023-11-02 09:48:48,516 [INFO] CodeEngine:257 - Generated code: D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\MXTmpFiles\license.tmp
+2023-11-02 09:48:48,574 [INFO] CodeEngine:239 - oldGeneratedFile, D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\MXTmpFiles\gpio.tmp_save
+2023-11-02 09:48:48,615 [INFO] CodeEngine:257 - Generated code: D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\MXTmpFiles\gpio.tmp
+2023-11-02 09:48:48,712 [INFO] CodeEngine:239 - oldGeneratedFile, D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\Core\Src\stm32f1xx_it.c_save
+2023-11-02 09:48:48,761 [INFO] CodeEngine:257 - Generated code: D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\Core\Src\stm32f1xx_it.c
+2023-11-02 09:48:48,764 [INFO] CodeEngine:239 - oldGeneratedFile, D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\Core\Inc\stm32f1xx_it.h_save
+2023-11-02 09:48:48,814 [INFO] CodeEngine:257 - Generated code: D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\Core\Inc\stm32f1xx_it.h
+2023-11-02 09:48:48,820 [INFO] CodeEngine:239 - oldGeneratedFile, D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\Core\Src\stm32f1xx_hal_msp.c_save
+2023-11-02 09:48:48,878 [INFO] CodeEngine:257 - Generated code: D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\Core\Src\stm32f1xx_hal_msp.c
+2023-11-02 09:48:48,880 [INFO] CodeEngine:239 - oldGeneratedFile, D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\MXTmpFiles\system.tmp_save
+2023-11-02 09:48:48,913 [INFO] CodeEngine:257 - Generated code: D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\MXTmpFiles\system.tmp
+2023-11-02 09:48:48,918 [INFO] CodeEngine:239 - oldGeneratedFile, D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-11-02 09:48:48,962 [INFO] CodeEngine:257 - Generated code: D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\Core\Inc\stm32f1xx_hal_conf.h
+2023-11-02 09:48:48,973 [WARN] IPConfigManager:3148 - IP not found : TIM
+2023-11-02 09:48:48,974 [WARN] CodeGenerator:3268 - IP not found : null
+2023-11-02 09:48:48,989 [INFO] CodeEngine:239 - oldGeneratedFile, D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\Core\Inc\main.h_save
+2023-11-02 09:48:49,029 [INFO] CodeEngine:257 - Generated code: D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\Core\Inc\main.h
+2023-11-02 09:48:49,031 [INFO] CodeEngine:239 - oldGeneratedFile, D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\Core\Src\main.c_save
+2023-11-02 09:48:49,116 [INFO] CodeEngine:257 - Generated code: D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\Core\Src\main.c
+2023-11-02 09:48:49,672 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 46mS.
+2023-11-02 09:48:49,672 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2023-11-02 09:48:50,004 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2023-11-02 09:48:50,015 [INFO] ApiDbMcu:468 - Load IP Config File for FATFS
+2023-11-02 09:48:50,031 [INFO] ApiDbMcu:468 - Load IP Config File for FREERTOS
+2023-11-02 09:48:50,062 [INFO] ApiDbMcu:468 - Load IP Config File for USB_DEVICE
+2023-11-02 09:48:51,420 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 1748mS.
+2023-11-02 09:48:51,437 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 16mS.
+2023-11-02 09:48:51,438 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.

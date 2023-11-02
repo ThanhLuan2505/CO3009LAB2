@@ -379,3 +379,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-17 15:00:46.984
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2023-11-02 10:01:20.325
+!MESSAGE Won't launch debug session since we failed to locate the binary.

@@ -196,8 +196,8 @@ void update7SEG(int index){
 }
 
 void updateClockBuffer(int hour, int minute){
-	  led_buffer[0] = (int)(hour/10);
 	  led_buffer[1] =  (int)(hour%10);
+	  led_buffer[0] = (int)(hour/10);
 	  led_buffer[2] =  (int)(minute/10);
 	  led_buffer[3] = (int)(minute%10);
 
@@ -388,6 +388,7 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 int counter = 10;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+	if(counter > 0){
 		counter --;
 		if(counter <= 0)
 		{
@@ -402,6 +403,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 				index_led = 0 ;
 				}
 		}
+	}
 }
 
 /* USER CODE END 4 */
