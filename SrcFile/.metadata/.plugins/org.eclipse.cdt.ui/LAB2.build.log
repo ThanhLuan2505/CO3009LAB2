@@ -1,44 +1,22 @@
-10:17:37 **** Incremental Build of configuration Debug for project LAB2 ****
+10:27:14 **** Incremental Build of configuration Debug for project LAB2 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:113:23: error: 'Led_GPIO_Port' undeclared (first use in this function); did you mean 'd_GPIO_Port'?
-  113 |    HAL_GPIO_TogglePin(Led_GPIO_Port, Led_Pin);
-      |                       ^~~~~~~~~~~~~
-      |                       d_GPIO_Port
-../Core/Src/main.c:113:23: note: each undeclared identifier is reported only once for each function it appears in
-../Core/Src/main.c:113:38: error: 'Led_Pin' undeclared (first use in this function); did you mean 'e_Pin'?
-  113 |    HAL_GPIO_TogglePin(Led_GPIO_Port, Led_Pin);
-      |                                      ^~~~~~~
-      |                                      e_Pin
-../Core/Src/main.c: In function 'MX_GPIO_Init':
-../Core/Src/main.c:220:36: error: 'Led_Pin' undeclared (first use in this function); did you mean 'e_Pin'?
-  220 |   HAL_GPIO_WritePin(GPIOA, DOT_Pin|Led_Pin|EN0_Pin|EN1_Pin
-      |                                    ^~~~~~~
-      |                                    e_Pin
-../Core/Src/main.c:224:28: error: 'pot0_Pin' undeclared (first use in this function)
-  224 |   HAL_GPIO_WritePin(GPIOB, pot0_Pin|pot1_Pin|pot2_Pin|pot3_Pin
-      |                            ^~~~~~~~
-../Core/Src/main.c:224:37: error: 'pot1_Pin' undeclared (first use in this function)
-  224 |   HAL_GPIO_WritePin(GPIOB, pot0_Pin|pot1_Pin|pot2_Pin|pot3_Pin
-      |                                     ^~~~~~~~
-../Core/Src/main.c:224:46: error: 'pot2_Pin' undeclared (first use in this function)
-  224 |   HAL_GPIO_WritePin(GPIOB, pot0_Pin|pot1_Pin|pot2_Pin|pot3_Pin
-      |                                              ^~~~~~~~
-../Core/Src/main.c:224:55: error: 'pot3_Pin' undeclared (first use in this function)
-  224 |   HAL_GPIO_WritePin(GPIOB, pot0_Pin|pot1_Pin|pot2_Pin|pot3_Pin
-      |                                                       ^~~~~~~~
-../Core/Src/main.c:225:28: error: 'pot4_Pin' undeclared (first use in this function)
-  225 |                           |pot4_Pin|pot5_Pin|pot6_Pin, GPIO_PIN_RESET);
-      |                            ^~~~~~~~
-../Core/Src/main.c:225:37: error: 'pot5_Pin' undeclared (first use in this function)
-  225 |                           |pot4_Pin|pot5_Pin|pot6_Pin, GPIO_PIN_RESET);
-      |                                     ^~~~~~~~
-../Core/Src/main.c:225:46: error: 'pot6_Pin' undeclared (first use in this function)
-  225 |                           |pot4_Pin|pot5_Pin|pot6_Pin, GPIO_PIN_RESET);
-      |                                              ^~~~~~~~
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
+arm-none-eabi-gcc -o "LAB2.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\DaiHoc\HK5\VXL\GIT_LAB2\SrcFile\LAB2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB2.elf
+ 
+arm-none-eabi-size   LAB2.elf 
+arm-none-eabi-objdump -h -S  LAB2.elf  > "LAB2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7056	     24	   1648	   8728	   2218	LAB2.elf
+arm-none-eabi-objcopy  -O ihex  LAB2.elf  "LAB2.hex"
+Finished building: default.size.stdout
+Finished building: LAB2.list
+ 
+Finished building: LAB2.hex
+ 
+arm-none-eabi-objcopy  -O binary  LAB2.elf  "LAB2.bin"
+ 
+Finished building: LAB2.bin
+ 
 
-10:17:38 Build Failed. 11 errors, 0 warnings. (took 530ms)
+10:27:15 Build Finished. 0 errors, 0 warnings. (took 1s.124ms)
 
