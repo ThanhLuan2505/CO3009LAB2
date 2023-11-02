@@ -155,7 +155,7 @@ void display7SEG(int num){
 
 const int MAX_LED = 4;
 int index_led = 0;
-int led_buffer[4] = {1, 2, 3, 4};
+int led_buffer[4] = {1, 2, 3, 0};
 void update7SEG(int index){
 	switch (index){
 	case 0 :
@@ -364,8 +364,9 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-int counter = 25;
+int counter = 10;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+	if(counter > 0){
 		counter --;
 		if(counter <= 0)
 		{
@@ -380,6 +381,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 				index_led = 0 ;
 				}
 		}
+	}
 }
 
 /* USER CODE END 4 */
